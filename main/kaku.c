@@ -14,7 +14,7 @@ static const char* KAKU_TAG = "KAKU";
 
 #define KAKU_GROUP				0
 #define KAKU_STATE				1
-#define KAKU_UNIT				3
+#define KAKU_UNIT				1
 #define KAKU_ADDRESS_STATUS     0x503F3290ul
 #define KAKU_ADDRESS			(KAKU_ADDRESS_STATUS >> 6ul)
 
@@ -163,24 +163,16 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
     //add address and state in one go 32 bits
     //ESP_LOGI(KAKU_TAG, "0x%08x 0x%08x",frame->address_state,frame->address);
     for(i = 0; i < 27 ; i++) {
-        if(addr_state & 0x80000000ul) {
-        	//ESP_LOGI(KAKU_TAG, "%2d - 1",i+1);
-        	item += kaku_onePulse(item);
-        } else {
-        	//ESP_LOGI(KAKU_TAG, "%2d - 0",i+1);
-        	item += kaku_zeroPulse(item);
-        }
-        addr_state <<= 1;
+        item += ((addr_state <<i) & 0x80000000ul)? kaku_onePulse(item) : kaku_zeroPulse(item);
     }
-
 
     ESP_LOGI(KAKU_TAG, "%d" ,frame->dim_value);
     // dim or not to dim...
-    if(frame->dim_value == 0x05){
+    if(frame->dim_value == 0x00){
     	//if dimmer is full on or full off ignore dim value and write the last bit off address_state as usual
     	item += frame->on_off ? kaku_onePulse(item) : kaku_zeroPulse(item);
     }else{
-    	//to entre dimmer mode the last bit of the address_state needs to be different
+    	//to enter dimmer mode the last bit of the address_state needs to be different
     	item += kaku_dimPulse(item);
     }
 
@@ -190,12 +182,12 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
 	}
 
 	//add the dim bits (16 levels)
-	//if(frame->dim_value != 0){
+	if(frame->dim_value != 0){
 		//add dim value if not 0x00 or 0x0F (full off or full on, is just regular on off)
 		for(i = 0; i < 4; i++) {
 			item += ((frame->dim_value << i) & 0x08)? kaku_onePulse(item): kaku_zeroPulse(item);
 		}
-	//}
+	}
 
     //close the frame with a stop pulse
 	kaku_stopPulse(item);
@@ -225,7 +217,6 @@ void rmt_kaku_tx_task()
 			.unit = KAKU_UNIT,
 			.dim_value = 0
     };
-    frame.address_state &= 0xFFFFFFC0ul;
 
     for(;;) {
     	frame.dim_value++;
@@ -246,7 +237,7 @@ void rmt_kaku_tx_task()
         	rmt_wait_tx_done(channel);
         }
         //before we free the data, make sure sending is already done.
-        vTaskDelay(2000 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
         free(item);
     }
     vTaskDelete(NULL);

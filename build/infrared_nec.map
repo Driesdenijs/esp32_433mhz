@@ -6989,7 +6989,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
  .bss           0x0000000000000000        0x0 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
  .xt.lit        0x0000000000000000       0x40 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
- .xt.prop       0x0000000000000000      0x27c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+ .xt.prop       0x0000000000000000      0x294 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
  .bss           0x0000000000000000        0x0 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
  .xt.prop       0x0000000000000000       0x24 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
  .bss           0x0000000000000000        0x0 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
@@ -11835,7 +11835,7 @@ END GROUP
                 0x000000003f406660                _lit4_end = ABSOLUTE (.)
                 0x000000003f406660                . = ALIGN (0x4)
 
-.flash.text     0x00000000400d0018    0x22aa3
+.flash.text     0x00000000400d0018    0x22aa7
                 0x00000000400d0018                _stext = .
                 0x00000000400d0018                _text_start = ABSOLUTE (.)
  *(.literal .text .literal.* .text.* .stub .gnu.warning .gnu.linkonce.literal.* .gnu.linkonce.t.*.literal .gnu.linkonce.t.*)
@@ -14406,660 +14406,660 @@ END GROUP
                 0x00000000400efe1c       0x26 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
  *fill*         0x00000000400efe42        0x2 
  .text.kaku_build_frame
-                0x00000000400efe44       0xe2 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
-                                         0xf6 (size before relaxing)
- *fill*         0x00000000400eff26        0x2 
+                0x00000000400efe44       0xeb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+                                         0xff (size before relaxing)
+ *fill*         0x00000000400eff2f        0x1 
  .text.rmt_tx_init
-                0x00000000400eff28       0x43 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+                0x00000000400eff30       0x43 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
                                          0x47 (size before relaxing)
- *fill*         0x00000000400eff6b        0x1 
+ *fill*         0x00000000400eff73        0x1 
  .text.rmt_kaku_tx_task
-                0x00000000400eff6c       0xef /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
-                                        0x11b (size before relaxing)
-                0x00000000400eff6c                rmt_kaku_tx_task
- *fill*         0x00000000400f005b        0x1 
- .text          0x00000000400f005c      0x2fa /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
-                0x00000000400f007c                __adddf3
-                0x00000000400f01d0                __subdf3
- *fill*         0x00000000400f0356        0x2 
- .text          0x00000000400f0358      0x1fb /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
-                0x00000000400f0438                __muldf3
- *fill*         0x00000000400f0553        0x1 
- .text          0x00000000400f0554      0x20b /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
-                0x00000000400f063c                __divdf3
- *fill*         0x00000000400f075f        0x1 
- .text          0x00000000400f0760      0x176 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
-                0x00000000400f0760                __eqdf2
-                0x00000000400f0760                __nedf2
-                0x00000000400f0794                __gtdf2
-                0x00000000400f07bc                __ledf2
-                0x00000000400f0820                __gedf2
-                0x00000000400f0848                __ltdf2
-                0x00000000400f08ac                __unorddf2
- *fill*         0x00000000400f08d6        0x2 
- .text          0x00000000400f08d8       0x4c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
-                0x00000000400f08d8                __fixdfsi
- .text          0x00000000400f0924       0x37 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
-                0x00000000400f0924                __popcountsi2
- *fill*         0x00000000400f095b        0x1 
- .text          0x00000000400f095c       0x26 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
-                0x00000000400f095c                __paritysi2
- *fill*         0x00000000400f0982        0x2 
- .text._ZdlPv   0x00000000400f0984        0xe /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_op.o)
-                0x00000000400f0984                _ZdlPv
- *fill*         0x00000000400f0992        0x2 
- .text._Znaj    0x00000000400f0994        0xc /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
+                0x00000000400eff74       0xeb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+                                        0x117 (size before relaxing)
+                0x00000000400eff74                rmt_kaku_tx_task
+ *fill*         0x00000000400f005f        0x1 
+ .text          0x00000000400f0060      0x2fa /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
+                0x00000000400f0080                __adddf3
+                0x00000000400f01d4                __subdf3
+ *fill*         0x00000000400f035a        0x2 
+ .text          0x00000000400f035c      0x1fb /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
+                0x00000000400f043c                __muldf3
+ *fill*         0x00000000400f0557        0x1 
+ .text          0x00000000400f0558      0x20b /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
+                0x00000000400f0640                __divdf3
+ *fill*         0x00000000400f0763        0x1 
+ .text          0x00000000400f0764      0x176 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
+                0x00000000400f0764                __eqdf2
+                0x00000000400f0764                __nedf2
+                0x00000000400f0798                __gtdf2
+                0x00000000400f07c0                __ledf2
+                0x00000000400f0824                __gedf2
+                0x00000000400f084c                __ltdf2
+                0x00000000400f08b0                __unorddf2
+ *fill*         0x00000000400f08da        0x2 
+ .text          0x00000000400f08dc       0x4c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
+                0x00000000400f08dc                __fixdfsi
+ .text          0x00000000400f0928       0x37 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
+                0x00000000400f0928                __popcountsi2
+ *fill*         0x00000000400f095f        0x1 
+ .text          0x00000000400f0960       0x26 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
+                0x00000000400f0960                __paritysi2
+ *fill*         0x00000000400f0986        0x2 
+ .text._ZdlPv   0x00000000400f0988        0xe /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_op.o)
+                0x00000000400f0988                _ZdlPv
+ *fill*         0x00000000400f0996        0x2 
+ .text._Znaj    0x00000000400f0998        0xc /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
                                          0x10 (size before relaxing)
-                0x00000000400f0994                _Znaj
- .text._Znwj    0x00000000400f09a0       0x28 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
+                0x00000000400f0998                _Znaj
+ .text._Znwj    0x00000000400f09a4       0x28 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
                                          0x2c (size before relaxing)
-                0x00000000400f09a0                _Znwj
- .text._ZdaPv   0x00000000400f09c8        0xa /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_opv.o)
+                0x00000000400f09a4                _Znwj
+ .text._ZdaPv   0x00000000400f09cc        0xa /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_opv.o)
                                           0xe (size before relaxing)
-                0x00000000400f09c8                _ZdaPv
- *fill*         0x00000000400f09d2        0x2 
+                0x00000000400f09cc                _ZdaPv
+ *fill*         0x00000000400f09d6        0x2 
  .text._ZSt15get_new_handlerv
-                0x00000000400f09d4       0x10 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
-                0x00000000400f09d4                _ZSt15get_new_handlerv
+                0x00000000400f09d8       0x10 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
+                0x00000000400f09d8                _ZSt15get_new_handlerv
  .text.rmt_set_tx_wrap_en
-                0x00000000400f09e4       0x32 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f09e8       0x32 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x36 (size before relaxing)
- *fill*         0x00000000400f0a16        0x2 
+ *fill*         0x00000000400f0a1a        0x2 
  .text.rmt_set_data_mode
-                0x00000000400f0a18       0x2e /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0a1c       0x2e /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x32 (size before relaxing)
- *fill*         0x00000000400f0a46        0x2 
+ *fill*         0x00000000400f0a4a        0x2 
  .text.rmt_tx_start
-                0x00000000400f0a48       0x82 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0a4c       0x82 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x8e (size before relaxing)
-                0x00000000400f0a48                rmt_tx_start
- *fill*         0x00000000400f0aca        0x2 
+                0x00000000400f0a4c                rmt_tx_start
+ *fill*         0x00000000400f0ace        0x2 
  .text.rmt_set_intr_enable_mask
-                0x00000000400f0acc       0x26 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0ad0       0x26 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x2a (size before relaxing)
-                0x00000000400f0acc                rmt_set_intr_enable_mask
- *fill*         0x00000000400f0af2        0x2 
+                0x00000000400f0ad0                rmt_set_intr_enable_mask
+ *fill*         0x00000000400f0af6        0x2 
  .text.rmt_clr_intr_enable_mask
-                0x00000000400f0af4       0x2b /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0af8       0x2b /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x2f (size before relaxing)
-                0x00000000400f0af4                rmt_clr_intr_enable_mask
- *fill*         0x00000000400f0b1f        0x1 
+                0x00000000400f0af8                rmt_clr_intr_enable_mask
+ *fill*         0x00000000400f0b23        0x1 
  .text.rmt_set_rx_intr_en
-                0x00000000400f0b20       0x5d /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0b24       0x5d /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x65 (size before relaxing)
-                0x00000000400f0b20                rmt_set_rx_intr_en
- *fill*         0x00000000400f0b7d        0x3 
+                0x00000000400f0b24                rmt_set_rx_intr_en
+ *fill*         0x00000000400f0b81        0x3 
  .text.rmt_set_err_intr_en
-                0x00000000400f0b80       0x60 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0b84       0x60 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x68 (size before relaxing)
-                0x00000000400f0b80                rmt_set_err_intr_en
+                0x00000000400f0b84                rmt_set_err_intr_en
  .text.rmt_set_tx_intr_en
-                0x00000000400f0be0       0x59 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0be4       0x59 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x61 (size before relaxing)
-                0x00000000400f0be0                rmt_set_tx_intr_en
- *fill*         0x00000000400f0c39        0x3 
+                0x00000000400f0be4                rmt_set_tx_intr_en
+ *fill*         0x00000000400f0c3d        0x3 
  .text.rmt_set_tx_thr_intr_en
-                0x00000000400f0c3c       0xb2 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0c40       0xb2 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0xbe (size before relaxing)
-                0x00000000400f0c3c                rmt_set_tx_thr_intr_en
- *fill*         0x00000000400f0cee        0x2 
+                0x00000000400f0c40                rmt_set_tx_thr_intr_en
+ *fill*         0x00000000400f0cf2        0x2 
  .text.rmt_set_pin
-                0x00000000400f0cf0       0xf0 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0cf4       0xf0 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                         0x108 (size before relaxing)
-                0x00000000400f0cf0                rmt_set_pin
+                0x00000000400f0cf4                rmt_set_pin
  .text.rmt_config
-                0x00000000400f0de0      0x3b1 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f0de4      0x3b1 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                         0x3e1 (size before relaxing)
-                0x00000000400f0de0                rmt_config
- *fill*         0x00000000400f1191        0x3 
+                0x00000000400f0de4                rmt_config
+ *fill*         0x00000000400f1195        0x3 
  .text.rmt_isr_register
-                0x00000000400f1194       0x7c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f1198       0x7c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x8c (size before relaxing)
-                0x00000000400f1194                rmt_isr_register
+                0x00000000400f1198                rmt_isr_register
  .text.rmt_driver_install
-                0x00000000400f1210      0x10a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f1214      0x10a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                         0x11e (size before relaxing)
-                0x00000000400f1210                rmt_driver_install
- *fill*         0x00000000400f131a        0x2 
+                0x00000000400f1214                rmt_driver_install
+ *fill*         0x00000000400f131e        0x2 
  .text.rmt_write_items
-                0x00000000400f131c      0x188 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f1320      0x188 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                         0x1b0 (size before relaxing)
-                0x00000000400f131c                rmt_write_items
+                0x00000000400f1320                rmt_write_items
  .text.rmt_wait_tx_done
-                0x00000000400f14a4       0x82 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+                0x00000000400f14a8       0x82 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
                                          0x8e (size before relaxing)
-                0x00000000400f14a4                rmt_wait_tx_done
- *fill*         0x00000000400f1526        0x2 
+                0x00000000400f14a8                rmt_wait_tx_done
+ *fill*         0x00000000400f152a        0x2 
  .text.timer_group_intr_enable
-                0x00000000400f1528       0x5c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
+                0x00000000400f152c       0x5c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
                                          0x64 (size before relaxing)
-                0x00000000400f1528                timer_group_intr_enable
+                0x00000000400f152c                timer_group_intr_enable
  .text.rtc_gpio_unhold_all
-                0x00000000400f1584       0x35 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
-                0x00000000400f1584                rtc_gpio_unhold_all
- *fill*         0x00000000400f15b9        0x3 
+                0x00000000400f1588       0x35 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
+                0x00000000400f1588                rtc_gpio_unhold_all
+ *fill*         0x00000000400f15bd        0x3 
  .text.periph_module_enable
-                0x00000000400f15bc      0x379 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
+                0x00000000400f15c0      0x379 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
                                         0x37c (size before relaxing)
-                0x00000000400f15bc                periph_module_enable
- *fill*         0x00000000400f1935        0x3 
+                0x00000000400f15c0                periph_module_enable
+ *fill*         0x00000000400f1939        0x3 
  .text.gpio_set_direction
-                0x00000000400f1938      0x138 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
+                0x00000000400f193c      0x138 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
                                         0x140 (size before relaxing)
-                0x00000000400f1938                gpio_set_direction
+                0x00000000400f193c                gpio_set_direction
  .text.lib_printf
-                0x00000000400f1a70       0x70 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
+                0x00000000400f1a74       0x70 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
  .text.phy_printf
-                0x00000000400f1ae0       0x2a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
-                0x00000000400f1ae0                phy_printf
- *fill*         0x00000000400f1b0a        0x2 
+                0x00000000400f1ae4       0x2a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
+                0x00000000400f1ae4                phy_printf
+ *fill*         0x00000000400f1b0e        0x2 
  .text.ets_timer_intr_set
-                0x00000000400f1b0c       0x6e /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1b10       0x6e /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x72 (size before relaxing)
- *fill*         0x00000000400f1b7a        0x2 
+ *fill*         0x00000000400f1b7e        0x2 
  .text.timer_insert
-                0x00000000400f1b7c       0x77 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1b80       0x77 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x8b (size before relaxing)
- *fill*         0x00000000400f1bf3        0x1 
+ *fill*         0x00000000400f1bf7        0x1 
  .text.ets_timer_setfn
-                0x00000000400f1bf4       0x26 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1bf8       0x26 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x32 (size before relaxing)
-                0x00000000400f1bf8                ets_timer_setfn
-                0x00000000400f1bf8                os_timer_setfn
- *fill*         0x00000000400f1c1a        0x2 
+                0x00000000400f1bfc                ets_timer_setfn
+                0x00000000400f1bfc                os_timer_setfn
+ *fill*         0x00000000400f1c1e        0x2 
  .text.ets_timer_disarm
-                0x00000000400f1c1c       0x51 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1c20       0x51 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x65 (size before relaxing)
-                0x00000000400f1c1c                os_timer_disarm
-                0x00000000400f1c1c                ets_timer_disarm
- *fill*         0x00000000400f1c6d        0x3 
+                0x00000000400f1c20                os_timer_disarm
+                0x00000000400f1c20                ets_timer_disarm
+ *fill*         0x00000000400f1c71        0x3 
  .text.ets_timer_arm_ms_us
-                0x00000000400f1c70       0xc6 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1c74       0xc6 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                         0x112 (size before relaxing)
-                0x00000000400f1c84                ets_timer_arm_ms_us
- *fill*         0x00000000400f1d36        0x2 
+                0x00000000400f1c88                ets_timer_arm_ms_us
+ *fill*         0x00000000400f1d3a        0x2 
  .text.ets_timer_arm
-                0x00000000400f1d38       0x14 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1d3c       0x14 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x18 (size before relaxing)
-                0x00000000400f1d38                ets_timer_arm
-                0x00000000400f1d38                os_timer_arm
+                0x00000000400f1d3c                ets_timer_arm
+                0x00000000400f1d3c                os_timer_arm
  .text.ets_timer_deinit
-                0x00000000400f1d4c       0x6e /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
+                0x00000000400f1d50       0x6e /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(ets_timer.o)
                                          0x96 (size before relaxing)
-                0x00000000400f1d60                ets_timer_deinit
- *fill*         0x00000000400f1dba        0x2 
+                0x00000000400f1d64                ets_timer_deinit
+ *fill*         0x00000000400f1dbe        0x2 
  .text.misc_nvs_deinit
-                0x00000000400f1dbc       0x20 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
+                0x00000000400f1dc0       0x20 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
                                          0x30 (size before relaxing)
-                0x00000000400f1dbc                misc_nvs_deinit
+                0x00000000400f1dc0                misc_nvs_deinit
  .text.nvs_log_init
-                0x00000000400f1ddc       0x8c /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
+                0x00000000400f1de0       0x8c /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
                                          0xac (size before relaxing)
-                0x00000000400f1de8                nvs_log_init
+                0x00000000400f1dec                nvs_log_init
  .text.misc_nvs_load
-                0x00000000400f1e68       0xa8 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
+                0x00000000400f1e6c       0xa8 /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
                                          0xec (size before relaxing)
-                0x00000000400f1e7c                misc_nvs_load
+                0x00000000400f1e80                misc_nvs_load
  .text.misc_nvs_restore
-                0x00000000400f1f10        0xc /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
+                0x00000000400f1f14        0xc /home/dries/esp/esp-idf/components/esp32/lib/libcore.a(misc_nvs.o)
                                          0x14 (size before relaxing)
-                0x00000000400f1f10                misc_nvs_restore
+                0x00000000400f1f14                misc_nvs_restore
  .text.tkip_decap
-                0x00000000400f1f1c       0xba /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_tkip.o)
+                0x00000000400f1f20       0xba /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_tkip.o)
                                          0xbe (size before relaxing)
- *fill*         0x00000000400f1fd6        0x2 
+ *fill*         0x00000000400f1fda        0x2 
  .text.tkip_encap
-                0x00000000400f1fd8       0x82 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_tkip.o)
+                0x00000000400f1fdc       0x82 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_tkip.o)
                                          0x8e (size before relaxing)
- *fill*         0x00000000400f205a        0x2 
+ *fill*         0x00000000400f205e        0x2 
  .text.wep_encap
-                0x00000000400f205c       0x54 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_wep.o)
+                0x00000000400f2060       0x54 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_wep.o)
                                          0x58 (size before relaxing)
- .text          0x00000000400f20b0        0xa /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
+ .text          0x00000000400f20b4        0xa /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
                                           0xd (size before relaxing)
-                0x00000000400f20b0                __errno
- *fill*         0x00000000400f20ba        0x2 
- .text          0x00000000400f20bc       0x79 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
+                0x00000000400f20b4                __errno
+ *fill*         0x00000000400f20be        0x2 
+ .text          0x00000000400f20c0       0x79 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
                                          0x81 (size before relaxing)
-                0x00000000400f20bc                _vsnprintf_r
-                0x00000000400f2110                vsnprintf
- *fill*         0x00000000400f2135        0x3 
+                0x00000000400f20c0                _vsnprintf_r
+                0x00000000400f2114                vsnprintf
+ *fill*         0x00000000400f2139        0x3 
  .text.__cxa_guard_dummy
-                0x00000000400f2138        0x5 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/cxx/libcxx.a(cxx_guards.o)
-                0x00000000400f2138                __cxa_guard_dummy
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x0 
- *fill*         0x00000000400f213d        0x3 
+                0x00000000400f213c        0x5 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/cxx/libcxx.a(cxx_guards.o)
+                0x00000000400f213c                __cxa_guard_dummy
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x0 
+ *fill*         0x00000000400f2141        0x3 
  .text.esp_phy_release_init_data
-                0x00000000400f2140        0x5 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(phy_init.o)
-                0x00000000400f2140                esp_phy_release_init_data
- *fill*         0x00000000400f2145        0x0 
- *fill*         0x00000000400f2145        0x3 
+                0x00000000400f2144        0x5 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(phy_init.o)
+                0x00000000400f2144                esp_phy_release_init_data
+ *fill*         0x00000000400f2149        0x0 
+ *fill*         0x00000000400f2149        0x3 
  .text.ieee80211_check_sleep
-                0x00000000400f2148        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_api.o)
-                0x00000000400f2148                ieee80211_check_sleep
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x0 
- *fill*         0x00000000400f214f        0x1 
+                0x00000000400f214c        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_api.o)
+                0x00000000400f214c                ieee80211_check_sleep
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x0 
+ *fill*         0x00000000400f2153        0x1 
  .text.ieee80211_is_support_rate
-                0x00000000400f2150       0x64 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
-                0x00000000400f2150                ieee80211_is_support_rate
- *fill*         0x00000000400f21b4        0x0 
+                0x00000000400f2154       0x64 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
+                0x00000000400f2154                ieee80211_is_support_rate
+ *fill*         0x00000000400f21b8        0x0 
  .text.ieee80211_is_lr_only
-                0x00000000400f21b4       0x14 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
-                0x00000000400f21b4                ieee80211_is_lr_only
+                0x00000000400f21b8       0x14 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
+                0x00000000400f21b8                ieee80211_is_lr_only
  .text.ieee80211_setup_lr_rates
-                0x00000000400f21c8       0x6d /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
-                0x00000000400f21c8                ieee80211_setup_lr_rates
- *fill*         0x00000000400f2235        0x0 
- *fill*         0x00000000400f2235        0x0 
- *fill*         0x00000000400f2235        0x3 
+                0x00000000400f21cc       0x6d /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
+                0x00000000400f21cc                ieee80211_setup_lr_rates
+ *fill*         0x00000000400f2239        0x0 
+ *fill*         0x00000000400f2239        0x0 
+ *fill*         0x00000000400f2239        0x3 
  .text.ieee80211_setup_rateset
-                0x00000000400f2238        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
-                0x00000000400f2238                ieee80211_setup_rateset
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x0 
- *fill*         0x00000000400f223f        0x1 
+                0x00000000400f223c        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_input.o)
+                0x00000000400f223c                ieee80211_setup_rateset
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x0 
+ *fill*         0x00000000400f2243        0x1 
  .text.wifi_station_get_reconnect_policy
-                0x00000000400f2240        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_ioctl.o)
-                0x00000000400f2240                wifi_station_get_reconnect_policy
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x0 
- *fill*         0x00000000400f2247        0x1 
+                0x00000000400f2244        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_ioctl.o)
+                0x00000000400f2244                wifi_station_get_reconnect_policy
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x0 
+ *fill*         0x00000000400f224b        0x1 
  .text.ieee80211_misc_deinit
-                0x00000000400f2248        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_misc.o)
-                0x00000000400f2248                ieee80211_misc_deinit
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x0 
- *fill*         0x00000000400f224f        0x1 
+                0x00000000400f224c        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_misc.o)
+                0x00000000400f224c                ieee80211_misc_deinit
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x0 
+ *fill*         0x00000000400f2253        0x1 
  .text.ieee80211_phy_type_get
-                0x00000000400f2250       0x2a /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_phy.o)
-                0x00000000400f2250                ieee80211_phy_type_get
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x0 
- *fill*         0x00000000400f227a        0x2 
+                0x00000000400f2254       0x2a /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_phy.o)
+                0x00000000400f2254                ieee80211_phy_type_get
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x0 
+ *fill*         0x00000000400f227e        0x2 
  .text.ieee80211_set_shortslottime
-                0x00000000400f227c       0x1b /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_proto.o)
-                0x00000000400f227c                ieee80211_set_shortslottime
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x0 
- *fill*         0x00000000400f2297        0x1 
+                0x00000000400f2280       0x1b /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_proto.o)
+                0x00000000400f2280                ieee80211_set_shortslottime
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x0 
+ *fill*         0x00000000400f229b        0x1 
  .text.ieee80211_parse_wmeparams
-                0x00000000400f2298       0x75 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_sta.o)
-                0x00000000400f2298                ieee80211_parse_wmeparams
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x0 
- *fill*         0x00000000400f230d        0x3 
+                0x00000000400f229c       0x75 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_sta.o)
+                0x00000000400f229c                ieee80211_parse_wmeparams
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x0 
+ *fill*         0x00000000400f2311        0x3 
  .text.cnx_rc_update_age
-                0x00000000400f2310       0x12 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(wl_cnx.o)
-                0x00000000400f2310                cnx_rc_update_age
- *fill*         0x00000000400f2322        0x0 
- *fill*         0x00000000400f2322        0x0 
- *fill*         0x00000000400f2322        0x0 
- *fill*         0x00000000400f2322        0x0 
- *fill*         0x00000000400f2322        0x0 
- *fill*         0x00000000400f2322        0x2 
+                0x00000000400f2314       0x12 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(wl_cnx.o)
+                0x00000000400f2314                cnx_rc_update_age
+ *fill*         0x00000000400f2326        0x0 
+ *fill*         0x00000000400f2326        0x0 
+ *fill*         0x00000000400f2326        0x0 
+ *fill*         0x00000000400f2326        0x0 
+ *fill*         0x00000000400f2326        0x0 
+ *fill*         0x00000000400f2326        0x2 
  .text.send_inval
-                0x00000000400f2324        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_action.o)
- *fill*         0x00000000400f232b        0x1 
+                0x00000000400f2328        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_action.o)
+ *fill*         0x00000000400f232f        0x1 
  .text.recv_inval
-                0x00000000400f232c        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_action.o)
- *fill*         0x00000000400f2333        0x0 
- *fill*         0x00000000400f2333        0x0 
- *fill*         0x00000000400f2333        0x1 
+                0x00000000400f2330        0x7 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_action.o)
+ *fill*         0x00000000400f2337        0x0 
+ *fill*         0x00000000400f2337        0x0 
+ *fill*         0x00000000400f2337        0x1 
  .text.ccmp_decap
-                0x00000000400f2334       0xb0 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_ccmp.o)
- *fill*         0x00000000400f23e4        0x0 
- *fill*         0x00000000400f23e4        0x0 
- .text.hex2num  0x00000000400f23e4       0x36 /home/dries/esp/esp-idf/components/esp32/lib/libwpa.a(common.o)
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x0 
- *fill*         0x00000000400f241a        0x2 
+                0x00000000400f2338       0xb0 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_ccmp.o)
+ *fill*         0x00000000400f23e8        0x0 
+ *fill*         0x00000000400f23e8        0x0 
+ .text.hex2num  0x00000000400f23e8       0x36 /home/dries/esp/esp-idf/components/esp32/lib/libwpa.a(common.o)
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x0 
+ *fill*         0x00000000400f241e        0x2 
  .text._system_r
-                0x00000000400f241c        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
-                0x00000000400f241c                _system_r
- *fill*         0x00000000400f2427        0x0 
- *fill*         0x00000000400f2427        0x0 
- *fill*         0x00000000400f2427        0x1 
+                0x00000000400f2420        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
+                0x00000000400f2420                _system_r
+ *fill*         0x00000000400f242b        0x0 
+ *fill*         0x00000000400f242b        0x0 
+ *fill*         0x00000000400f242b        0x1 
  .text._getpid_r
-                0x00000000400f2428        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
-                0x00000000400f2428                _getpid_r
- *fill*         0x00000000400f2433        0x1 
- .text._kill_r  0x00000000400f2434        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
-                0x00000000400f2434                _kill_r
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x0 
- *fill*         0x00000000400f243f        0x1 
+                0x00000000400f242c        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
+                0x00000000400f242c                _getpid_r
+ *fill*         0x00000000400f2437        0x1 
+ .text._kill_r  0x00000000400f2438        0xb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/newlib/libnewlib.a(syscalls.o)
+                0x00000000400f2438                _kill_r
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x0 
+ *fill*         0x00000000400f2443        0x1 
  .text._ZNK3nvs7Storage7isValidEv
-                0x00000000400f2440       0x11 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
-                0x00000000400f2440                _ZNK3nvs7Storage7isValidEv
- *fill*         0x00000000400f2451        0x0 
- *fill*         0x00000000400f2451        0x0 
- *fill*         0x00000000400f2451        0x0 
- *fill*         0x00000000400f2451        0x0 
- *fill*         0x00000000400f2451        0x0 
- *fill*         0x00000000400f2451        0x3 
+                0x00000000400f2444       0x11 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_storage.o)
+                0x00000000400f2444                _ZNK3nvs7Storage7isValidEv
+ *fill*         0x00000000400f2455        0x0 
+ *fill*         0x00000000400f2455        0x0 
+ *fill*         0x00000000400f2455        0x0 
+ *fill*         0x00000000400f2455        0x0 
+ *fill*         0x00000000400f2455        0x0 
+ *fill*         0x00000000400f2455        0x3 
  .text._ZSt9__find_ifIPjN9__gnu_cxx5__ops10_Iter_predIZN3nvs4Page4loadEjEUljE_EEET_S8_S8_T0_St26random_access_iterator_tag
-                0x00000000400f2454       0x6c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_page.o)
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
- *fill*         0x00000000400f24c0        0x0 
+                0x00000000400f2458       0x6c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_page.o)
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
+ *fill*         0x00000000400f24c4        0x0 
  .text._ZN3nvs8HashListC2Ev
-                0x00000000400f24c0        0xd /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
-                0x00000000400f24c0                _ZN3nvs8HashListC1Ev
-                0x00000000400f24c0                _ZN3nvs8HashListC2Ev
- *fill*         0x00000000400f24cd        0x0 
- *fill*         0x00000000400f24cd        0x0 
- *fill*         0x00000000400f24cd        0x3 
+                0x00000000400f24c4        0xd /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
+                0x00000000400f24c4                _ZN3nvs8HashListC1Ev
+                0x00000000400f24c4                _ZN3nvs8HashListC2Ev
+ *fill*         0x00000000400f24d1        0x0 
+ *fill*         0x00000000400f24d1        0x0 
+ *fill*         0x00000000400f24d1        0x3 
  .text._ZN3nvs8HashList13HashListBlockC2Ev
-                0x00000000400f24d0       0x22 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
-                0x00000000400f24d0                _ZN3nvs8HashList13HashListBlockC1Ev
-                0x00000000400f24d0                _ZN3nvs8HashList13HashListBlockC2Ev
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x0 
- *fill*         0x00000000400f24f2        0x2 
+                0x00000000400f24d4       0x22 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/nvs_flash/libnvs_flash.a(nvs_item_hash_list.o)
+                0x00000000400f24d4                _ZN3nvs8HashList13HashListBlockC1Ev
+                0x00000000400f24d4                _ZN3nvs8HashList13HashListBlockC2Ev
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x0 
+ *fill*         0x00000000400f24f6        0x2 
  .text.translate_fd
-                0x00000000400f24f4        0xc /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/vfs/libvfs.a(vfs.o)
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- *fill*         0x00000000400f2500        0x0 
- .text          0x00000000400f2500       0x59 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
-                0x00000000400f2500                __divsf3
- *fill*         0x00000000400f2559        0x0 
- *fill*         0x00000000400f2559        0x0 
- *fill*         0x00000000400f2559        0x0 
- *fill*         0x00000000400f2559        0x0 
- *fill*         0x00000000400f2559        0x3 
- .text          0x00000000400f255c       0x3d /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
-                0x00000000400f255c                __floatunsidf
-                0x00000000400f2568                __floatsidf
- *fill*         0x00000000400f2599        0x0 
- *fill*         0x00000000400f2599        0x0 
- *fill*         0x00000000400f2599        0x3 
- .text          0x00000000400f259c      0x281 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
-                0x00000000400f259c                __udivdi3
- *fill*         0x00000000400f281d        0x3 
- .text          0x00000000400f2820      0x26e /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
-                0x00000000400f2820                __umoddi3
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x0 
- *fill*         0x00000000400f2a8e        0x2 
+                0x00000000400f24f8        0xc /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/vfs/libvfs.a(vfs.o)
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ *fill*         0x00000000400f2504        0x0 
+ .text          0x00000000400f2504       0x59 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
+                0x00000000400f2504                __divsf3
+ *fill*         0x00000000400f255d        0x0 
+ *fill*         0x00000000400f255d        0x0 
+ *fill*         0x00000000400f255d        0x0 
+ *fill*         0x00000000400f255d        0x0 
+ *fill*         0x00000000400f255d        0x3 
+ .text          0x00000000400f2560       0x3d /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
+                0x00000000400f2560                __floatunsidf
+                0x00000000400f256c                __floatsidf
+ *fill*         0x00000000400f259d        0x0 
+ *fill*         0x00000000400f259d        0x0 
+ *fill*         0x00000000400f259d        0x3 
+ .text          0x00000000400f25a0      0x281 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+                0x00000000400f25a0                __udivdi3
+ *fill*         0x00000000400f2821        0x3 
+ .text          0x00000000400f2824      0x26e /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+                0x00000000400f2824                __umoddi3
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x0 
+ *fill*         0x00000000400f2a92        0x2 
  .text.rtc_printf
-                0x00000000400f2a90        0x7 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
-                0x00000000400f2a90                rtc_printf
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x0 
- *fill*         0x00000000400f2a97        0x1 
+                0x00000000400f2a94        0x7 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
+                0x00000000400f2a94                rtc_printf
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x0 
+ *fill*         0x00000000400f2a9b        0x1 
  .text.wep_decap
-                0x00000000400f2a98       0x23 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_wep.o)
- *fill*         0x00000000400f2abb        0x0 
- *fill*         0x00000000400f2abb        0x0 
+                0x00000000400f2a9c       0x23 /home/dries/esp/esp-idf/components/esp32/lib/libnet80211.a(ieee80211_crypto_wep.o)
+ *fill*         0x00000000400f2abf        0x0 
+ *fill*         0x00000000400f2abf        0x0 
  *(.irom0.text)
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x00000000400f2abb                _text_end = ABSOLUTE (.)
-                0x00000000400f2abb                _etext = .
+                0x00000000400f2abf                _text_end = ABSOLUTE (.)
+                0x00000000400f2abf                _etext = .
                 [!provide]                        PROVIDE (abort, 0x4000bba4)
                 [!provide]                        PROVIDE (abs, 0x40056340)
                 [!provide]                        PROVIDE (__absvdi2, 0x4006387c)
@@ -17264,7 +17264,7 @@ OUTPUT(/home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/infrared_
  .debug_abbrev  0x00000000000155b3      0x1ef /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
  .debug_abbrev  0x00000000000157a2       0x14 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatdidf.o)
 
-.debug_loc      0x0000000000000000    0x3cd3d
+.debug_loc      0x0000000000000000    0x3cd53
  .debug_loc     0x0000000000000000      0x234 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/cxx/libcxx.a(cxx_guards.o)
  .debug_loc     0x0000000000000234      0x3ef /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(panic.o)
  .debug_loc     0x0000000000000623      0x101 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(system_api.o)
@@ -17365,32 +17365,32 @@ OUTPUT(/home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/infrared_
  .debug_loc     0x0000000000035502      0x480 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/wpa_supplicant/libwpa_supplicant.a(md5-internal.o)
  .debug_loc     0x0000000000035982      0x1cb /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/wpa_supplicant/libwpa_supplicant.a(aes-internal.o)
  .debug_loc     0x0000000000035b4d      0x8e1 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/wpa_supplicant/libwpa_supplicant.a(aes-internal-dec.o)
- .debug_loc     0x000000000003642e      0x294 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
- .debug_loc     0x00000000000366c2       0xa5 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
- .debug_loc     0x0000000000036767       0x43 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
- .debug_loc     0x00000000000367aa      0x9e8 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .debug_loc     0x0000000000037192      0x950 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
- .debug_loc     0x0000000000037ae2       0x21 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
- .debug_loc     0x0000000000037b03       0x74 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
- .debug_loc     0x0000000000037b77       0x21 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
- .debug_loc     0x0000000000037b98     0x16ce /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
- .debug_loc     0x0000000000039266      0xa3a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
- .debug_loc     0x0000000000039ca0      0xa8f /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
- .debug_loc     0x000000000003a72f       0x42 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
- .debug_loc     0x000000000003a771      0xa89 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
- .debug_loc     0x000000000003b1fa      0x17e /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
- .debug_loc     0x000000000003b378      0x176 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_loop.o)
- .debug_loc     0x000000000003b4ee       0x5b /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(hw_random.o)
- .debug_loc     0x000000000003b549      0x2ba /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_default_handlers.o)
- .debug_loc     0x000000000003b803       0x21 /home/dries/esp/esp-idf/components/esp32/lib/libphy.a(phy.o)
- .debug_loc     0x000000000003b824      0x46c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_main.o)
- .debug_loc     0x000000000003bc90       0x40 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_dev.o)
- .debug_loc     0x000000000003bcd0      0xbaa /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/freertos/libfreertos.a(ringbuf.o)
- .debug_loc     0x000000000003c87a      0x134 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(wlanif.o)
- .debug_loc     0x000000000003c9ae      0x157 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethernetif.o)
- .debug_loc     0x000000000003cb05      0x12a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethip6.o)
- .debug_loc     0x000000000003cc2f       0x21 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sysgettod.o)
- .debug_loc     0x000000000003cc50       0xed /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
+ .debug_loc     0x000000000003642e      0x2aa /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+ .debug_loc     0x00000000000366d8       0xa5 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
+ .debug_loc     0x000000000003677d       0x43 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
+ .debug_loc     0x00000000000367c0      0x9e8 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_loc     0x00000000000371a8      0x950 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+ .debug_loc     0x0000000000037af8       0x21 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
+ .debug_loc     0x0000000000037b19       0x74 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
+ .debug_loc     0x0000000000037b8d       0x21 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
+ .debug_loc     0x0000000000037bae     0x16ce /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+ .debug_loc     0x000000000003927c      0xa3a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
+ .debug_loc     0x0000000000039cb6      0xa8f /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
+ .debug_loc     0x000000000003a745       0x42 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
+ .debug_loc     0x000000000003a787      0xa89 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
+ .debug_loc     0x000000000003b210      0x17e /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
+ .debug_loc     0x000000000003b38e      0x176 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_loop.o)
+ .debug_loc     0x000000000003b504       0x5b /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(hw_random.o)
+ .debug_loc     0x000000000003b55f      0x2ba /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_default_handlers.o)
+ .debug_loc     0x000000000003b819       0x21 /home/dries/esp/esp-idf/components/esp32/lib/libphy.a(phy.o)
+ .debug_loc     0x000000000003b83a      0x46c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_main.o)
+ .debug_loc     0x000000000003bca6       0x40 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_dev.o)
+ .debug_loc     0x000000000003bce6      0xbaa /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/freertos/libfreertos.a(ringbuf.o)
+ .debug_loc     0x000000000003c890      0x134 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(wlanif.o)
+ .debug_loc     0x000000000003c9c4      0x157 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethernetif.o)
+ .debug_loc     0x000000000003cb1b      0x12a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethip6.o)
+ .debug_loc     0x000000000003cc45       0x21 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sysgettod.o)
+ .debug_loc     0x000000000003cc66       0xed /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
 
 .debug_aranges  0x0000000000000000     0x33d0
  .debug_aranges
@@ -17815,7 +17815,7 @@ OUTPUT(/home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/infrared_
  .debug_ranges  0x0000000000003298       0x28 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethernetif.o)
  .debug_ranges  0x00000000000032c0       0x18 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethip6.o)
 
-.debug_line     0x0000000000000000    0x462ef
+.debug_line     0x0000000000000000    0x462f9
  .debug_line    0x0000000000000000      0x835 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/cxx/libcxx.a(cxx_guards.o)
  .debug_line    0x0000000000000835      0x760 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(panic.o)
  .debug_line    0x0000000000000f95      0x453 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(system_api.o)
@@ -17926,48 +17926,48 @@ OUTPUT(/home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/infrared_
  .debug_line    0x000000000003b26b      0x352 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/wpa_supplicant/libwpa_supplicant.a(aes-internal.o)
  .debug_line    0x000000000003b5bd      0x54b /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/wpa_supplicant/libwpa_supplicant.a(aes-internal-dec.o)
  .debug_line    0x000000000003bb08       0xd2 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(infrared_nec_main.o)
- .debug_line    0x000000000003bbda      0x570 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
- .debug_line    0x000000000003c14a      0x130 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
- .debug_line    0x000000000003c27a      0x6b8 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
- .debug_line    0x000000000003c932      0x4a9 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
- .debug_line    0x000000000003cddb      0x4c6 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
- .debug_line    0x000000000003d2a1      0x3a6 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
- .debug_line    0x000000000003d647      0x11e /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
- .debug_line    0x000000000003d765      0x100 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
- .debug_line    0x000000000003d865       0x9c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
- .debug_line    0x000000000003d901       0x9c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
- .debug_line    0x000000000003d99d      0x18f /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .debug_line    0x000000000003db2c      0x1dc /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
- .debug_line    0x000000000003dd08      0x260 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_op.o)
- .debug_line    0x000000000003df68      0x138 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
- .debug_line    0x000000000003e0a0      0x31a /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
- .debug_line    0x000000000003e3ba      0x132 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_opv.o)
- .debug_line    0x000000000003e4ec      0x1e1 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
- .debug_line    0x000000000003e6cd     0x135c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
- .debug_line    0x000000000003fa29      0x962 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
- .debug_line    0x000000000004038b      0xe7a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
- .debug_line    0x0000000000041205      0x4a9 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
- .debug_line    0x00000000000416ae      0xbcf /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
- .debug_line    0x000000000004227d      0x33d /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
- .debug_line    0x00000000000425ba      0x431 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_loop.o)
- .debug_line    0x00000000000429eb      0x129 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(hw_random.o)
- .debug_line    0x0000000000042b14      0x689 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_default_handlers.o)
- .debug_line    0x000000000004319d       0x92 /home/dries/esp/esp-idf/components/esp32/libhal.a(clock.o)
- .debug_line    0x000000000004322f      0x2ef /home/dries/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
- .debug_line    0x000000000004351e       0x50 /home/dries/esp/esp-idf/components/esp32/libhal.a(interrupts--intlevel.o)
- .debug_line    0x000000000004356e       0x66 /home/dries/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
- .debug_line    0x00000000000435d4       0x66 /home/dries/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
- .debug_line    0x000000000004363a       0xc5 /home/dries/esp/esp-idf/components/esp32/lib/libphy.a(phy.o)
- .debug_line    0x00000000000436ff      0xd69 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_main.o)
- .debug_line    0x0000000000044468      0x303 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_dev.o)
- .debug_line    0x000000000004476b      0xb79 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/freertos/libfreertos.a(ringbuf.o)
- .debug_line    0x00000000000452e4      0x369 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(wlanif.o)
- .debug_line    0x000000000004564d      0x383 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethernetif.o)
- .debug_line    0x00000000000459d0      0x2d1 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethip6.o)
- .debug_line    0x0000000000045ca1       0xcc /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
- .debug_line    0x0000000000045d6d      0x136 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sysgettod.o)
- .debug_line    0x0000000000045ea3      0x2bc /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
- .debug_line    0x000000000004615f      0x190 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatdidf.o)
+ .debug_line    0x000000000003bbda      0x57a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/main/libmain.a(kaku.o)
+ .debug_line    0x000000000003c154      0x130 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divsf3.o)
+ .debug_line    0x000000000003c284      0x6b8 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
+ .debug_line    0x000000000003c93c      0x4a9 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
+ .debug_line    0x000000000003cde5      0x4c6 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
+ .debug_line    0x000000000003d2ab      0x3a6 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
+ .debug_line    0x000000000003d651      0x11e /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
+ .debug_line    0x000000000003d76f      0x100 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
+ .debug_line    0x000000000003d86f       0x9c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_popcountsi2.o)
+ .debug_line    0x000000000003d90b       0x9c /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_paritysi2.o)
+ .debug_line    0x000000000003d9a7      0x18f /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x000000000003db36      0x1dc /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+ .debug_line    0x000000000003dd12      0x260 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_op.o)
+ .debug_line    0x000000000003df72      0x138 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_opv.o)
+ .debug_line    0x000000000003e0aa      0x31a /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_op.o)
+ .debug_line    0x000000000003e3c4      0x132 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(del_opv.o)
+ .debug_line    0x000000000003e4f6      0x1e1 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/libstdc++.a(new_handler.o)
+ .debug_line    0x000000000003e6d7     0x135c /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rmt.o)
+ .debug_line    0x000000000003fa33      0x962 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(timer.o)
+ .debug_line    0x0000000000040395      0xe7a /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(rtc_module.o)
+ .debug_line    0x000000000004120f      0x4a9 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(periph_ctrl.o)
+ .debug_line    0x00000000000416b8      0xbcf /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/driver/libdriver.a(gpio.o)
+ .debug_line    0x0000000000042287      0x33d /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(lib_printf.o)
+ .debug_line    0x00000000000425c4      0x431 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_loop.o)
+ .debug_line    0x00000000000429f5      0x129 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(hw_random.o)
+ .debug_line    0x0000000000042b1e      0x689 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/esp32/libesp32.a(event_default_handlers.o)
+ .debug_line    0x00000000000431a7       0x92 /home/dries/esp/esp-idf/components/esp32/libhal.a(clock.o)
+ .debug_line    0x0000000000043239      0x2ef /home/dries/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
+ .debug_line    0x0000000000043528       0x50 /home/dries/esp/esp-idf/components/esp32/libhal.a(interrupts--intlevel.o)
+ .debug_line    0x0000000000043578       0x66 /home/dries/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
+ .debug_line    0x00000000000435de       0x66 /home/dries/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
+ .debug_line    0x0000000000043644       0xc5 /home/dries/esp/esp-idf/components/esp32/lib/libphy.a(phy.o)
+ .debug_line    0x0000000000043709      0xd69 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_main.o)
+ .debug_line    0x0000000000044472      0x303 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/ethernet/libethernet.a(emac_dev.o)
+ .debug_line    0x0000000000044775      0xb79 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/freertos/libfreertos.a(ringbuf.o)
+ .debug_line    0x00000000000452ee      0x369 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(wlanif.o)
+ .debug_line    0x0000000000045657      0x383 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethernetif.o)
+ .debug_line    0x00000000000459da      0x2d1 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/lwip/liblwip.a(ethip6.o)
+ .debug_line    0x0000000000045cab       0xcc /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
+ .debug_line    0x0000000000045d77      0x136 /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sysgettod.o)
+ .debug_line    0x0000000000045ead      0x2bc /home/dries/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vsnprintf.o)
+ .debug_line    0x0000000000046169      0x190 /usr/local/cross/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatdidf.o)
 
 .debug_str      0x0000000000000000    0x1cec9
  .debug_str     0x0000000000000000     0x2370 /home/dries/esp/esp-idf/examples/peripherals/esp32_433mhz/build/cxx/libcxx.a(cxx_guards.o)
