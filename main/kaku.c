@@ -14,7 +14,7 @@ static const char* KAKU_TAG = "KAKU";
 
 #define KAKU_GROUP				0
 #define KAKU_STATE				1
-#define KAKU_UNIT				0
+#define KAKU_UNIT				3
 #define KAKU_ADDRESS_STATUS     0x503F3290ul
 #define KAKU_ADDRESS			(KAKU_ADDRESS_STATUS >> 6ul)
 
@@ -156,14 +156,13 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
     int i = 0;
     rmt_item32_t* start_item = item;
     uint32_t addr_state = frame->address_state;
-    uint8_t dim = frame->dim_value & 0x0F;
 
     //add start pulse
     item += kaku_startPulse(item);
 
     //add address and state in one go 32 bits
     //ESP_LOGI(KAKU_TAG, "0x%08x 0x%08x",frame->address_state,frame->address);
-    for(i = 0; i < 32 ; i++) {
+    for(i = 0; i < 27 ; i++) {
         if(addr_state & 0x80000000ul) {
         	//ESP_LOGI(KAKU_TAG, "%2d - 1",i+1);
         	item += kaku_onePulse(item);
@@ -174,29 +173,29 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
         addr_state <<= 1;
     }
 
-    ESP_LOGI(KAKU_TAG, "%d" ,dim);
+
+    ESP_LOGI(KAKU_TAG, "%d" ,frame->dim_value);
     // dim or not to dim...
-    if((dim  == 0x00) || (dim == 0x0F)){
+    if(frame->dim_value == 0x05){
     	//if dimmer is full on or full off ignore dim value and write the last bit off address_state as usual
-    	if(addr_state & 0x1) {
-    	   	item += kaku_onePulse(item);
-    	} else {
-    	    item += kaku_zeroPulse(item);
-    	}
+    	item += frame->on_off ? kaku_onePulse(item) : kaku_zeroPulse(item);
     }else{
     	//to entre dimmer mode the last bit of the address_state needs to be different
     	item += kaku_dimPulse(item);
+    }
 
+    //uint number
+	for(i = 0; i < 4; i++) {
+		item +=((frame->unit << i) & 0x08)? kaku_onePulse(item): kaku_zeroPulse(item);
+	}
+
+	//add the dim bits (16 levels)
+	//if(frame->dim_value != 0){
 		//add dim value if not 0x00 or 0x0F (full off or full on, is just regular on off)
 		for(i = 0; i < 4; i++) {
-			if(dim & 0x08) {
-				item += kaku_onePulse(item);
-			} else {
-				item += kaku_zeroPulse(item);
-			}
-			dim <<= 1;
+			item += ((frame->dim_value << i) & 0x08)? kaku_onePulse(item): kaku_zeroPulse(item);
 		}
-    }
+	//}
 
     //close the frame with a stop pulse
 	kaku_stopPulse(item);
@@ -229,12 +228,17 @@ void rmt_kaku_tx_task()
     frame.address_state &= 0xFFFFFFC0ul;
 
     for(;;) {
-    	frame.dim_value = group++%16;
+    	frame.dim_value++;
+    	frame.dim_value %= 16;
         //if(frame.on_off)frame.on_off=0;
         //else frame.on_off = 1;
     	rmt_item32_t* item = (rmt_item32_t*) malloc(100*sizeof(rmt_item32_t));
-        bzero(item, 70*sizeof(rmt_item32_t));
+        bzero(item, 100*sizeof(rmt_item32_t));
         int size = kaku_build_frame( item, &frame );
+        for(x=0;x < 80; x++){
+        	ESP_LOGI(KAKU_TAG, "%2d = %d %5d - %2d %5d",x, item[x].level0, item[x].duration0,item[x].level1, item[x].duration1);
+        }
+        ESP_LOGI(KAKU_TAG, "size %2d dim %2d unit %d", size ,frame.dim_value, frame.unit);
         for(x=0;x<25;x++){
         	//To send data according to the waveform items.
         	rmt_write_items(channel, item, 100, true);
@@ -242,12 +246,9 @@ void rmt_kaku_tx_task()
         	rmt_wait_tx_done(channel);
         }
         //before we free the data, make sure sending is already done.
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
         free(item);
     }
     vTaskDelete(NULL);
 }
 
-        //for(x=0;x < 70 ; x++){
-        	//ESP_LOGI(KAKU_TAG, "%2d = %d %5d - %2d %5d",x, item[x].level0, item[x].duration0,item[x].level1, item[x].duration1);
-        //}
