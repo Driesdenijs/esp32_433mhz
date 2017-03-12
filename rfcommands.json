@@ -1,0 +1,14 @@
+{
+	"commands":[
+		{
+			"protocol":"kaku",
+			"type" : "dimmer",
+			"address" : 1346318992,
+			"value" : 0,
+			"repeat" : 25
+		}
+	]
+}
+
+
+

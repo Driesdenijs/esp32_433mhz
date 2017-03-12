@@ -35,7 +35,7 @@ MEMORY
      the amount of RAM available.
   */
   dram0_0_seg (RW) : org = 0x3FFB0000 + 0x0,
-                                     len = 0x50000 - 0x0 - 0x0
+                                     len = 0x50000 - 0x4000 - 0x0
   /* Flash mapped constant data */
   drom0_0_seg (R) : org = 0x3F400010, len = 0x800000
   /* RTC fast memory (executable). Persists over deep sleep.
@@ -49,4 +49,4 @@ MEMORY
                                      len = 0x1000 - 0
 }
 /* Heap ends at top of dram0_0_seg */
-_heap_end = 0x40000000 - 0x0;
+_heap_end = 0x40000000 - 0x4000;

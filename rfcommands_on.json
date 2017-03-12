@@ -1,0 +1,39 @@
+{
+	"commands":[
+		{
+			"protocol":"kaku",
+			"type" : "dimmer",
+			"address" : 21036234,
+			"unit": 1,
+			"value" : 15,
+			"repeat" : 2
+		},
+		{
+			"protocol":"kaku",
+			"type" : "dimmer",
+			"address" : 21036234,
+			"unit": 2,
+			"value" : 15,
+			"repeat" : 2
+		},
+		{
+			"protocol":"kaku",
+			"type" : "dimmer",
+			"address" : 21036234,
+			"unit": 3,
+			"value" : 15,
+			"repeat" : 2
+		},
+		{
+			"protocol":"kaku",
+			"type" : "dimmer",
+			"address" : 21036234,
+			"unit": 0,
+			"value" : 15,
+			"repeat" : 12
+		}
+	]
+}
+
+
+

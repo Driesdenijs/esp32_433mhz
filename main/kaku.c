@@ -9,12 +9,14 @@
 #include "driver/rmt.h"
 #include "driver/periph_ctrl.h"
 #include "soc/rmt_reg.h"
+#include "frameDispatcher.h"
+#include "kaku.h"
 
 static const char* KAKU_TAG = "KAKU";
 
 #define KAKU_GROUP				0
 #define KAKU_STATE				1
-#define KAKU_UNIT				1
+#define KAKU_UNIT				3
 #define KAKU_ADDRESS_STATUS     0x503F3290ul
 #define KAKU_ADDRESS			(KAKU_ADDRESS_STATUS >> 6ul)
 
@@ -40,25 +42,18 @@ static const char* KAKU_TAG = "KAKU";
 #define RMT_CLK_DIV       100    /*!< RMT counter clock divider */
 #define RMT_TICK_10_US    (80000000/RMT_CLK_DIV/100000)   /*!< RMT counter value for 10 us.(Source clock is APB clock) */
 
-
-typedef struct {
-	union {
-		struct {
-			uint32_t unit    :4;	  //specific unit [0...15]
-			uint32_t on_off  :1;	  // desired state for on off devices else [dim_value]
-			uint32_t group   :1;	  //'1' means the state is for the whole group, i.e. all on
-			uint32_t address :26; 	  //unique address
-		};
-		uint32_t address_state;
-	};
-	uint8_t dim_value;
-} kaku_frame;
+enum deviceTypes
+{
+	KAKU_SWITCH = 0,
+	KAKU_DIMMER,
+	KAKU_ETC
+};
 
 
 /*
  * @brief RMT transmitter initialization
  */
-static void rmt_tx_init()
+static void kaku_init()
 {
     rmt_config_t rmt_tx;
     rmt_tx.channel = RMT_TX_CHANNEL;
@@ -75,6 +70,8 @@ static void rmt_tx_init()
     rmt_tx.rmt_mode = 0;
     rmt_config(&rmt_tx);
     rmt_driver_install(rmt_tx.channel, 0, 0);
+
+    esp_log_level_set(KAKU_TAG, ESP_LOG_INFO);
 }
 
 
@@ -151,7 +148,7 @@ static int kaku_stopPulse(rmt_item32_t *item)
 /*
  * @brief Build kaku frame
  */
-static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
+static int kaku_build_frame(rmt_item32_t* item, kaku_frame * frame )
 {
     int i = 0;
     rmt_item32_t* start_item = item;
@@ -166,9 +163,9 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
         item += ((addr_state <<i) & 0x80000000ul)? kaku_onePulse(item) : kaku_zeroPulse(item);
     }
 
-    ESP_LOGI(KAKU_TAG, "%d" ,frame->dim_value);
+    //ESP_LOGI(KAKU_TAG, "%d" ,frame->dim_value);
     // dim or not to dim...
-    if(frame->dim_value == 0x00){
+    if(frame->value == 0x00){
     	//if dimmer is full on or full off ignore dim value and write the last bit off address_state as usual
     	item += frame->on_off ? kaku_onePulse(item) : kaku_zeroPulse(item);
     }else{
@@ -182,10 +179,10 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
 	}
 
 	//add the dim bits (16 levels)
-	if(frame->dim_value != 0){
+	if(frame->value != 0){
 		//add dim value if not 0x00 or 0x0F (full off or full on, is just regular on off)
 		for(i = 0; i < 4; i++) {
-			item += ((frame->dim_value << i) & 0x08)? kaku_onePulse(item): kaku_zeroPulse(item);
+			item += ((frame->value << i) & 0x08)? kaku_onePulse(item): kaku_zeroPulse(item);
 		}
 	}
 
@@ -199,47 +196,38 @@ static int kaku_build_frame(rmt_item32_t* item, kaku_frame* frame )
  * @brief RMT transmitter demo, this task will periodically send NEC data. (100 * 32 bits each time.)
  *
  */
-void rmt_kaku_tx_task()
+void kaku_sendframe(RFcommand command)
 {
 	int x;
-	static int group =0;
-	vTaskDelay(10);
-    rmt_tx_init();
-    esp_log_level_set(KAKU_TAG, ESP_LOG_INFO);
-    int channel = RMT_TX_CHANNEL;
-    ESP_LOGI(KAKU_TAG, "KAKU TRANSMIT START");
-    kaku_frame frame =
-    {
-    		//.address_state = KAKU_ADDRESS_STATUS
-    		.address = KAKU_ADDRESS,
-    		.group = KAKU_GROUP,
-			.on_off = KAKU_STATE,
-			.unit = KAKU_UNIT,
-			.dim_value = 0
+
+    //parse the command struct to a kaku
+    kaku_frame frame ={
+    		.address = command.address,
+			.unit = command.unit,
+    		.value = command.value
     };
 
-    for(;;) {
-    	frame.dim_value++;
-    	frame.dim_value %= 16;
-        //if(frame.on_off)frame.on_off=0;
-        //else frame.on_off = 1;
-    	rmt_item32_t* item = (rmt_item32_t*) malloc(100*sizeof(rmt_item32_t));
-        bzero(item, 100*sizeof(rmt_item32_t));
-        int size = kaku_build_frame( item, &frame );
-        for(x=0;x < 80; x++){
-        	ESP_LOGI(KAKU_TAG, "%2d = %d %5d - %2d %5d",x, item[x].level0, item[x].duration0,item[x].level1, item[x].duration1);
-        }
-        ESP_LOGI(KAKU_TAG, "size %2d dim %2d unit %d", size ,frame.dim_value, frame.unit);
-        for(x=0;x<25;x++){
-        	//To send data according to the waveform items.
-        	rmt_write_items(channel, item, 100, true);
-        	//Wait until sending is done.
-        	rmt_wait_tx_done(channel);
-        }
-        //before we free the data, make sure sending is already done.
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-        free(item);
-    }
-    vTaskDelete(NULL);
-}
+    //verify some limits
+    if(frame.unit > 15 || frame.unit < 0)frame.unit = frame.unit%16;
+    if(frame.value > 15 )frame.value = frame.value%16;
+    if(frame.unit > 15 )frame.unit = frame.unit%16;
+    if(command.repetitions > 100)command.repetitions = 100;
+    if(command.repetitions < 1)command.repetitions = 25;
 
+    kaku_init();
+
+	//allocate pulse memory
+	rmt_item32_t* item = (rmt_item32_t*) malloc(100*sizeof(rmt_item32_t));
+	memset(item, 0, 100*sizeof(rmt_item32_t));
+	int size = kaku_build_frame( item, &frame );
+
+	//ESP_LOGI(KAKU_TAG, "framesize %2d -address 0x%08x dim %2d unit %d group %d repetitions %d\n", size ,frame.address_state,frame.value, frame.unit ,frame.group, command.repetitions);
+	for(x=0;x<command.repetitions;x++){
+		//To send data according to the waveform items.
+		rmt_write_items(RMT_TX_CHANNEL, item, 100, true);
+		//Wait until sending is done.
+		rmt_wait_tx_done(RMT_TX_CHANNEL);
+	}
+	//before we free the data, make sure sending is already done.
+	free(item);
+}
